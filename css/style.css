@@ -204,12 +204,11 @@ ul, ol {
 }
 
 .section-header h2 {
-  font-family: var(--font-brand);
   font-size: 2.25rem;
   font-weight: 800;
   color: var(--navy-900);
   line-height: 1.25;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   margin-bottom: 1rem;
 }
 
@@ -475,10 +474,14 @@ ul, ol {
   flex-direction: column;
 }
 
-.brand-name {
+/* Official Grand Optical Logo Typography in Handel Gothic */
+.brand-logo-text,
+.brand-logo .brand-name {
+  font-family: var(--font-brand);
   line-height: 1.1;
   font-weight: 800;
   color: var(--navy-900);
+  letter-spacing: 0.03em;
 }
 
 .brand-subtitle {
@@ -675,12 +678,11 @@ ul, ol {
 }
 
 .hero-title {
-  font-family: var(--font-brand);
   font-size: 3.4rem;
   font-weight: 800;
   line-height: 1.1;
   color: var(--navy-900);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
 }
 
@@ -1200,7 +1202,6 @@ ul, ol {
 }
 
 .brand-card .brand-name {
-  font-family: var(--font-brand);
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--navy-900);
@@ -1272,7 +1273,6 @@ ul, ol {
 }
 
 .rayban-meta-title {
-  font-family: var(--font-brand);
   font-size: 2.75rem;
   font-weight: 900;
   line-height: 1.15;
@@ -1374,7 +1374,6 @@ ul, ol {
 }
 
 .lens-brands-header h3 {
-  font-family: var(--font-brand);
   font-size: 1.85rem;
   font-weight: 800;
   color: var(--navy-900);
