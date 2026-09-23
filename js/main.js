@@ -59,32 +59,35 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  // 3. Active Nav Link Highlight based on Scroll Position
+  // 3. Active Nav Link Highlight based on Scroll Position (ScrollSpy)
   const sections = document.querySelectorAll('section[id]');
-  if ('IntersectionObserver' in window) {
-    const observerOptions = {
-      root: null,
-      rootMargin: '-20% 0px -60% 0px',
-      threshold: 0
-    };
+  const updateActiveNavLink = () => {
+    const scrollPos = window.scrollY + 160;
+    let currentSectionId = 'home';
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          navLinks.forEach(link => {
-            if (link.getAttribute('href') === `#${id}`) {
-              link.classList.add('active');
-            } else {
-              link.classList.remove('active');
-            }
-          });
-        }
-      });
-    }, observerOptions);
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
 
-    sections.forEach(section => sectionObserver.observe(section));
-  }
+    if (window.scrollY < 100) {
+      currentSectionId = 'home';
+    }
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === `#${currentSectionId}`) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+  updateActiveNavLink();
 
   // 4. Product Category Filter Tabs
   const filterBtns = document.querySelectorAll('.filter-btn');

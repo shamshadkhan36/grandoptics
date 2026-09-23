@@ -528,6 +528,11 @@ ul, ol {
   width: 100%;
 }
 
+/* Mobile drawer action buttons - hidden by default on desktop */
+.mobile-only-cta {
+  display: none;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
