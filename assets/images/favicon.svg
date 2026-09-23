@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#grad)"/>
+  <!-- Glasses icon -->
+  <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left lens rim -->
+    <circle cx="23" cy="33" r="10"/>
+    <!-- Right lens rim -->
+    <circle cx="41" cy="33" r="10"/>
+    <!-- Bridge -->
+    <path d="M33 33c0-3 2-4 4-4" stroke-dasharray="none" />
+    <path d="M33 32 c-1.5 -2.5 1.5 -2.5 0 0"/>
+    <path d="M33 33 Q32 30 27 30"/>
+    <!-- Clean bridge arc -->
+    <path d="M33 32 C32 29, 32 29, 31 32" />
+    <!-- Temples -->
+    <path d="M13 32 L7 28"/>
+    <path d="M51 32 L57 28"/>
+  </g>
+  <!-- Bridge connecting two circles -->
+  <path d="M33 32 Q32 28 31 32" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Light reflex arc inside left lens -->
+  <path d="M18 29 A 6 6 0 0 1 24 27" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Light reflex arc inside right lens -->
+  <path d="M36 29 A 6 6 0 0 1 42 27" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>
