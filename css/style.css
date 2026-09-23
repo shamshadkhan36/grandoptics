@@ -1055,6 +1055,155 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
+   9b. Featured Brands Section
+   -------------------------------------------------------------------------- */
+.brands-section {
+  position: relative;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-light);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.brands-ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+  margin-bottom: 3.5rem;
+  background: linear-gradient(90deg, #f8fafc 0%, #eff6ff 50%, #f8fafc 100%);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+}
+
+.brands-ticker {
+  display: inline-flex;
+  gap: 3rem;
+  animation: tickerScroll 30s linear infinite;
+  align-items: center;
+}
+
+.brands-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy-800);
+}
+
+.ticker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--blue-600);
+  display: inline-block;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brand-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-smooth);
+  box-shadow: var(--shadow-xs);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--blue-500);
+  box-shadow: var(--shadow-lg);
+}
+
+.brand-logo-box {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.brand-card .brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.brand-card .brand-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue-600);
+  margin-bottom: 0.65rem;
+}
+
+.brand-card .brand-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.brand-card .brand-action {
+  width: 100%;
+  margin-top: auto;
+}
+
+.brand-card .brand-action .btn {
+  width: 100%;
+  font-size: 0.825rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+/* --------------------------------------------------------------------------
    10. Products Showcase (10 Items)
    -------------------------------------------------------------------------- */
 .products-section {
