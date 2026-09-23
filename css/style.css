@@ -133,6 +133,16 @@ ul, ol {
   list-style: none;
 }
 
+/* Ensure all website headings strictly use Plus Jakarta Sans */
+h1, h2, h3, h4, h5, h6,
+.section-header h2,
+.hero-title,
+.brand-card .brand-name,
+.rayban-meta-title,
+.lens-brands-header h3 {
+  font-family: var(--font-family) !important;
+}
+
 /* --------------------------------------------------------------------------
    3. Utility Classes & Layout Container
    -------------------------------------------------------------------------- */
@@ -477,7 +487,7 @@ ul, ol {
 /* Official Grand Optical Logo Typography in Handel Gothic */
 .brand-logo-text,
 .brand-logo .brand-name {
-  font-family: var(--font-brand);
+  font-family: var(--font-brand) !important;
   line-height: 1.1;
   font-weight: 800;
   color: var(--navy-900);
