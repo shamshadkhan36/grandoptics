@@ -4,17 +4,6 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   0. Brand Typography (Handel Gothic)
-   -------------------------------------------------------------------------- */
-@font-face {
-  font-family: 'Handel Gothic';
-  src: url('../assets/fonts/HandelGothic.woff') format('woff');
-  font-weight: 400 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* --------------------------------------------------------------------------
    1. CSS Custom Properties / Design Tokens
    -------------------------------------------------------------------------- */
 :root {
@@ -23,8 +12,6 @@
   --navy-800: #0f243e;
   --navy-700: #1a365d;
   --navy-600: #2a4365;
-
-  --font-brand: 'Handel Gothic', 'HandelGothic BT', -apple-system, sans-serif;
 
   --blue-600: #2563eb;
   --blue-700: #1d4ed8;
@@ -131,16 +118,6 @@ button {
 
 ul, ol {
   list-style: none;
-}
-
-/* Ensure all website headings strictly use Plus Jakarta Sans */
-h1, h2, h3, h4, h5, h6,
-.section-header h2,
-.hero-title,
-.brand-card .brand-name,
-.rayban-meta-title,
-.lens-brands-header h3 {
-  font-family: var(--font-family) !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -484,14 +461,10 @@ h1, h2, h3, h4, h5, h6,
   flex-direction: column;
 }
 
-/* Official Grand Optical Logo Typography in Handel Gothic */
-.brand-logo-text,
-.brand-logo .brand-name {
-  font-family: var(--font-brand) !important;
+.brand-name {
   line-height: 1.1;
   font-weight: 800;
   color: var(--navy-900);
-  letter-spacing: 0.03em;
 }
 
 .brand-subtitle {
