@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <g transform="translate(15, 12)">
+    <!-- 7th Street block -->
+    <rect x="0" y="0" width="34" height="34" rx="6" fill="#0f172a"/>
+    <text x="17" y="24" font-family="'Arial Black', sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">7th</text>
+    <text x="44" y="18" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="1" fill="#0f172a">SEVENTH</text>
+    <text x="44" y="32" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="1" fill="#0f172a">STREET</text>
+  </g>
+  <text x="145" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="7" font-weight="700" letter-spacing="3" fill="#64748b" text-anchor="middle">BY SAFILO</text>
+</svg>

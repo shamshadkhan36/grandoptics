@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="crizalArc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a3e0"/>
+      <stop offset="100%" stop-color="#005088"/>
+    </linearGradient>
+  </defs>
+  <!-- Lens reflection arc over i -->
+  <path d="M 68 18 Q 88 8 108 18 Q 88 12 68 18 Z" fill="url(#crizalArc)"/>
+  <!-- Crizal text -->
+  <text x="100" y="38" font-family="'Century Gothic', 'Montserrat', Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="1" fill="#005088" text-anchor="middle">Crizal</text>
+  <text x="100" y="50" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="7.5" font-weight="700" letter-spacing="3" fill="#64748b" text-anchor="middle">BY ESSILOR</text>
+</svg>
