@@ -4,6 +4,17 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   0. Brand Typography (Handel Gothic for Hero Title)
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Handel Gothic';
+  src: url('../assets/fonts/HandelGothic.woff') format('woff');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------------------------------------------------------------------------
    1. CSS Custom Properties / Design Tokens
    -------------------------------------------------------------------------- */
 :root {
@@ -12,6 +23,8 @@
   --navy-800: #0f243e;
   --navy-700: #1a365d;
   --navy-600: #2a4365;
+
+  --font-brand: 'Handel Gothic', 'HandelGothic BT', -apple-system, sans-serif;
 
   --blue-600: #2563eb;
   --blue-700: #1d4ed8;
@@ -661,11 +674,12 @@ ul, ol {
 }
 
 .hero-title {
+  font-family: var(--font-brand);
   font-size: 3.4rem;
   font-weight: 800;
   line-height: 1.1;
   color: var(--navy-900);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   margin-bottom: 0.75rem;
 }
 
