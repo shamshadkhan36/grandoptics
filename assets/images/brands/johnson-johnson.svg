@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <!-- Johnson & Johnson Vision -->
+  <g>
+    <!-- Brand wordmark -->
+    <text x="110" y="29" 
+          font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, Arial, sans-serif" 
+          font-size="16.5" 
+          font-weight="900" 
+          letter-spacing="-0.2" 
+          fill="#D51900" 
+          text-anchor="middle">Johnson &amp; Johnson</text>
+    
+    <!-- Subtitle: Vision Care & Acuvue -->
+    <text x="110" y="45" 
+          font-family="'Plus Jakarta Sans', Arial, sans-serif" 
+          font-size="8" 
+          font-weight="700" 
+          letter-spacing="3" 
+          fill="#475569" 
+          text-anchor="middle">VISION CARE &#8226; ACUVUE&#174;</text>
+  </g>
+</svg>
