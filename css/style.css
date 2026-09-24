@@ -415,6 +415,15 @@ ul, ol {
   font-weight: 600;
 }
 
+.topbar-badge-eye {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 @media (max-width: 840px) {
   .topbar {
     display: none;
@@ -643,6 +652,26 @@ ul, ol {
     gap: 0.75rem;
   }
 
+  .mobile-drawer-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--blue-700);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  .mobile-drawer-badge svg {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: var(--blue-600);
+  }
+
   .header-actions .btn-whatsapp {
     display: none;
   }
@@ -750,6 +779,19 @@ ul, ol {
   color: #10b981;
 }
 
+.guarantee-item-eye {
+  color: var(--navy-900);
+  background-color: rgba(37, 99, 235, 0.08);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  font-weight: 700;
+}
+
+.guarantee-item-eye svg {
+  color: var(--blue-600);
+}
+
 /* Hero Visual Box */
 .hero-visual-wrapper {
   position: relative;
@@ -809,6 +851,11 @@ ul, ol {
   align-items: center;
   justify-content: center;
   color: var(--blue-600);
+}
+
+.float-icon-eye {
+  background-color: rgba(16, 185, 129, 0.14);
+  color: #059669;
 }
 
 .float-icon svg {
